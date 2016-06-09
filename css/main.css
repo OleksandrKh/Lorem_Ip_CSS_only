@@ -1,0 +1,433 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+body {
+	background: #e2e4ea url(../img/html_bg.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	min-width: 320px;
+	overflow-x: hidden;
+	position: relative;
+}
+.site_grid {
+	margin: 110px auto 0;
+	position: relative;
+	width: 90%;
+}
+.site_grid:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* floats for all classes with 'col-'*/
+[class^="col-"] {
+	float: left;
+	padding: 0 1.153846154%;
+}
+.col-12 {
+	width: 100%;
+}
+.col-8 {
+	width: 66.666666667%;
+}
+.col-6 {
+	width: 50%;
+	padding-left: 0 1.153846154%;
+}
+.col-3 {
+	width: 25%;
+}
+.row,
+aside {
+	width: 100%;
+}
+
+/*===== General appearance settings
+======= for blocks ==============*/
+
+header,
+section,
+nav,
+aside,
+footer {
+	box-shadow: 0 4px 0 rgba(0, 0, 0, .15);
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+section,
+nav,
+aside,
+footer {
+	box-shadow: 0 4px 0 rgba(0, 0, 0, .05);
+	overflow: hidden;
+}
+section {
+	background-color: #fff;
+}
+/*main settings for head of the box*/
+.box_heading {
+	background-color: #ddd;
+	background: -webkit-linear-gradient(bottom, #f0f1f4, #ffffff);
+	background: linear-gradient(to top, #f0f1f4, #ffffff);
+	font-size: 1em;
+	font-weight: bold;
+	padding: 12px 0 4px 24px;
+	text-transform: uppercase;
+}
+/*====== Main styles for contant =====
+======== of the site ===============*/
+
+.content-top {
+	padding: 15px 0 5px 15px;
+}
+.content-top p {
+	font-weight: bold;
+	font-size: 0.688em;
+	margin: 0;
+	text-transform: uppercase;
+}
+.content-center {
+	padding-left: 32px;
+	width: 50%;
+}
+.content_h2 {
+	color: #00a7da;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 8px;
+	margin-top: 20px;
+}
+.content_h2::first-letter {
+	text-transform: uppercase;
+}
+.content-center p {
+	font-size: 0.750em;
+	line-height: 2.1em;
+	margin-bottom: 30px;
+}
+.content-center p::first-letter {
+	text-transform: uppercase;
+}
+.content-bottom {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0 0 10px 17px;
+	width: 100%;
+}
+.content-bottom li {
+	display: inline-block;
+	font-size: 0.563em;
+	line-height: 1em;
+	padding: 0 5px;
+	text-transform: capitalize;
+}
+.content-bottom li:first-child {
+	padding-left: 0;
+}
+.content-bottom li:last-child {
+	padding-right: 0;
+	border-right: none;
+}
+.content-bottom li span {
+	text-transform: uppercase;
+}
+
+/*-----------------------------------*/
+
+
+/*====================================
+=============== CONTENT ==============
+====================================*/
+
+
+/*============= Header =============*/
+
+.header {
+	background-color: #00a7da;
+	background: url(../img/smoke.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: 50% 72%;
+	border-radius: 7px;
+}
+
+/*-------------------------------------*/
+
+.logo_wrapper {
+	background: -webkit-linear-gradient(left, #555b72, #393e4d 30%);
+	background: linear-gradient(to right, #555b72, #393e4d 30%);
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	height: 80px;
+	position: relative;
+	width: 100%;
+}
+.logo {
+	position: absolute;
+	left: -30px;
+}
+
+/*====== Styles for Content of the ===
+======== header ====================*/
+
+.header__content {
+	background: url(../img/leaf.png), url(../img/artwork_gradient_bg.png);
+	background-repeat: no-repeat;
+	background-size: 30% 85%, cover;
+	background-position: top right, center center;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+.header__content-top {
+	color: rgb(255, 255, 255);
+	color: rgba(255, 255, 255, .4);
+}
+.header__content-top {
+	border-bottom: 1px solid rgb(255, 255, 255);
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+.content__header-h2 {
+	color: #fff;
+}
+.header__content-center {
+	color: #fff;
+}
+.header__content-bottom {
+	border-top: 1px solid rgb(255, 255, 255);
+	border-top: 1px solid rgba(255, 255, 255, .2);
+}
+.header__content-bottom li {
+	color: rgb(255, 255, 255);
+	color: rgba(255, 255, 255, .4);
+	border-right: 1px solid rgb(255, 255, 255);
+	border-right: 1px solid rgba(255, 255, 255, .2);
+}
+.header__content-bottom li span {
+	color: #fff;
+}
+
+/*===== Button in artwork bock ====*/
+
+.header__content-button {
+	background-color: #fff;
+	border-radius: 20px;
+	border: none;
+	box-shadow: 0 5px 0 rgba(0, 0, 0, .1);
+	color: #00a7da;
+	font-size: 0.875em;
+	font-weight: bold;
+	margin: 0 0 26px 17px;
+	padding: 3px 14px;
+}
+
+/*===== Styles for Contant! but
+======= in sections =========*/
+
+.section__content-top {
+	border-bottom: 1px solid rgb(0, 0, 0);
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.section__content-top p {
+	color: #363a4a;
+}
+.section__content-center {
+	color: #363a4a;
+	margin: 0;
+	padding-left: 32px;
+	padding-right: 40px;
+	width: 100%;
+}
+.section__content-bottom {
+	border-top: 1px solid rgb(0, 0, 0);
+	border-top: 1px solid rgba(0, 0, 0, .2);
+}
+.section__content-bottom li {
+	color: #363a4a;
+	border-right: 1px solid rgb(0, 0, 0);
+	border-right: 1px solid rgba(0, 0, 0, .2);
+}
+.section__content-bottom li span {
+	color: #63bd4e;
+}
+
+/*--------------------------------*/
+
+
+/*========= Bottom boxes =========*/
+
+.left-box{
+	padding: 0 2.307692308% 0 0;
+}
+.right-box{
+	padding: 0 0 0 2.307692308%;
+}
+.little-box_heading {
+	color: #363a4a;
+}
+.box_list {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.box_list_item {
+	border-bottom: 1px solid #ddd;
+	font-size: 0.688em;
+	list-style-position: inside;
+	margin: 0;
+	padding: 4px 24px;
+}
+.box_list_item:last-child {
+	padding-bottom: 10px;
+}
+.box_list_item a {
+	color: #00a7da;
+	display: inline;
+	height: 100%;
+	vertical-align: middle;
+	padding: 4px 24px;
+	text-decoration: none;
+	width: 100%;
+}
+.box_list_item a:hover {
+	color: #0287b0;
+	text-decoration: none;
+}
+
+/*===================================
+============== SIDEBAR ==============
+===================================*/
+/*========== sidebar Menu ==========*/
+.mnu {
+	background-color: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.mnu__list {
+	border: 1px solid #ddd;
+	margin: 0;
+	position: relative;
+}
+.mnu__list_item {
+	background-color: #fff;
+	background: -webkit-linear-gradient(bottom, #f0f1f4, #ffffff);
+	background: linear-gradient(to top, #f0f1f4, #ffffff);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	color: #b5b9c9;
+	display: block;
+	font-size: 0.688em;
+	outline: none;
+	padding: 20px 25px 25px;
+	text-decoration: none;
+}
+.mnu__list_item:hover {
+	text-decoration: none;
+	background-color: #fff;
+	background: -webkit-linear-gradient(bottom, #e3e5eb, #fff);
+	background: linear-gradient(to top, #e3e5eb, #fff);
+}
+.mnu__list_item:last-child {
+	border-bottom: none;
+}
+.mnu__heading {
+	font-size: 1.636em;
+	margin: 0;
+}
+.mnu__text {
+	margin: 0;
+}
+.mnu_btn_blog {
+	color: #363a4a;
+}
+.mnu_btn_about {
+	color: #00a7da;
+}
+.mnu_btn_contact {
+	color:#63bd4e;
+}
+.mnu__heading {
+	display: block;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+/*======= Search sidebar =======*/
+.search_wrapper {
+	padding: 14px 15px;
+	background-color: #fff;
+	border-radius: 7px;
+}
+.search_line {
+	position: relative;
+	height: 35px;
+	width: 100%;
+}
+.search_line:after,
+.search_line:before{
+	content: "";
+	display: table;
+	clear: both;
+}
+input[type="search"] {
+	color: rgba(0, 0, 0, 0.6);
+	background-color: #f5f5f7;
+	border: none;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	box-shadow: inset 0 4px 0 rgba(0, 0, 0, 0.2);
+	float: left;
+	padding: 5px 10px;
+	outline: none;
+	width: calc(100% - 34px);
+}
+.mnu_btn {
+	background-color: #fff;
+	background-image: url(../img/search_icon.png);
+	background: url(../img/search_icon.png), -webkit-linear-gradient(bottom, #f0f1f4, #ffffff);
+	background: url(../img/search_icon.png), linear-gradient(to top, #f0f1f4, #ffffff);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%, 100% 100%;
+	border: none;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	float: left;
+	height: 34px;
+	margin-left: -1px;
+	padding: 0;
+	vertical-align: middle;
+	width: 34px;
+}
+/*------------------------------*/
+/*======== Aside lists ========*/
+.aside__box_item {
+	background-color: #fff;
+	list-style-type: none;
+	padding-left: 0;
+}
+.aside__box-head {
+	font-size: 0.688em;
+}
+
+/*------------------------------*/
+
+/*===================================
+============== Footer ===============
+===================================*/
+.main_footer {
+	background-color: #fff;
+	padding: 20px 17px;
+}
+.main_footer p {
+	color: #b5b9c9;
+	font-size: 0.563em;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
